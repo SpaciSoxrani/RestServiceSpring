@@ -1,6 +1,8 @@
 package org.example.models;
 
-public class Contacts {
+import java.io.Serializable;
+
+public class Contacts implements Serializable {
     private String phoneNumber;
     private String email;
 

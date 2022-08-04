@@ -2,10 +2,9 @@ package org.example.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
-@XmlRootElement
-public class Client {
+public class Client implements Serializable {
     private int id;
     private String name;
     private Contacts contacts;
@@ -13,28 +12,39 @@ public class Client {
     public Contacts getContacts() {
         return contacts;
     }
+
     public void setContacts(Contacts contacts) {
         this.contacts = contacts;
     }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
 
-    public Client(Contacts contacts) {
+    public Client(int id, String name, Contacts contacts) {
+        this.id = id;
+        this.name = name;
+        this.contacts = contacts;
+    }
+
+    public Client(Contacts contacts){
         this.contacts = contacts;
     }
 
     @Override
     public String toString() {
-        return id + "," + name;
+        return Integer.toString(getId()) + "," + getName() + "," + getContacts().getEmail() + "," + getContacts().getPhoneNumber();
     }
 }

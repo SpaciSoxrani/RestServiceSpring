@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="add first structure - controller for client + pattern repository">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="add dependency in XML configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/converter/CSVConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/converter/IConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/PersonalContacts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/RepositoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ContactsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,18 +54,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Java/apache-tomcat-9.0.65",
+    "last_opened_file_path": "C:/Users/I553132/IdeaProjects/RestServiceSpring/src/main/resources",
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\I553132\IdeaProjects\RestServiceSpring\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\I553132\IdeaProjects\RestServiceSpring\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat9" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8085" />
+      <option name="adminPort" value="8081" />
       <option name="contextPath" value="/RestServiceSpring" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
       <option name="envOptions">
@@ -121,7 +126,42 @@
       <option name="project" value="LOCAL" />
       <updated>1659617451513</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add contacts class">
+      <created>1659620096364</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620096364</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add contacts repo">
+      <created>1659620120181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620120181</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add new field - Contacts">
+      <created>1659620142836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620142836</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add new field - Contacts">
+      <created>1659620185379</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620185379</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add dependency in XML configuration">
+      <created>1659620210095</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620210095</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +178,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add first structure - controller for client + pattern repository" />
     <MESSAGE value="fix XML configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix XML configuration" />
+    <MESSAGE value="add contacts class" />
+    <MESSAGE value="add contacts repo" />
+    <MESSAGE value="add new field - Contacts" />
+    <MESSAGE value="add dependency in XML configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependency in XML configuration" />
   </component>
 </project>

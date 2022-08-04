@@ -1,13 +1,22 @@
 package org.example.repository;
 
+import org.example.converter.CSVConverter;
 import org.example.models.Client;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Converter;
 import org.springframework.stereotype.Repository;
 
+import java.io.IOException;
+import java.nio.file.Path;
 import java.util.*;
 
 @Repository
-public class ClientRepository implements RepositoryInterface<Client>{
+public class ClientRepository implements IRepository<Client> {
     private Map<Integer, Client> repository;
+    @Autowired
+    private CSVConverter csvConverter;
+
+    private final Path CSV_PATH = Path.of("C:\\Users\\I553132\\IdeaProjects\\RestServiceSpring\\src\\main\\resources\\PersonalContacts.csv");
 
     public ClientRepository() {
         this.repository = new HashMap<>();
@@ -15,15 +24,18 @@ public class ClientRepository implements RepositoryInterface<Client>{
     }
 
     @Override
-    public void store(Client client) {
+    public void store(Client client) throws Exception {
         repository.put(client.getId(), client);
+        csvConverter.writeLineByLine(client);
     }
 
+    //TODO: add logic
     @Override
     public Client retrieve(int id) {
         return repository.get(id);
     }
 
+    //TODO: add logic
     @Override
     public Client search(String name) {
         Collection<Client> clients = repository.values();
@@ -34,6 +46,7 @@ public class ClientRepository implements RepositoryInterface<Client>{
         return null;
     }
 
+    //TODO: add logic
     @Override
     public Client delete(int id) {
         Client client = repository.get(id);
@@ -41,12 +54,9 @@ public class ClientRepository implements RepositoryInterface<Client>{
         return client;
     }
 
-    public List<Client> getAll() {
-        List<Client> clients = new ArrayList<>();
+    public List<String[]> getAll() throws Exception {
 
-        clients.addAll(this.repository.values());
-
-        return clients;
+        return csvConverter.readLineByLine(CSV_PATH);
     }
 
 }
