@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="add dependency in XML configuration">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/converter/CSVConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/converter/IConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/PersonalContacts.csv" afterDir="false" />
+    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="delete unused files and code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/converter/CSVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/CSVConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/converter/IConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/IConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ContactsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/RepositoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PersonalContacts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PersonalContacts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/I553132/IdeaProjects/RestServiceSpring/src/main/resources",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -161,8 +158,18 @@
       <option name="project" value="LOCAL" />
       <updated>1659620210095</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="delete unused files and code">
+      <created>1659639417498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659639417498</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -182,6 +189,7 @@
     <MESSAGE value="add contacts repo" />
     <MESSAGE value="add new field - Contacts" />
     <MESSAGE value="add dependency in XML configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependency in XML configuration" />
+    <MESSAGE value="delete unused files and code" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unused files and code" />
   </component>
 </project>

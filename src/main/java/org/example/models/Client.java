@@ -1,7 +1,5 @@
 package org.example.models;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.io.Serializable;
 
 public class Client implements Serializable {
@@ -41,6 +39,8 @@ public class Client implements Serializable {
 
     public Client(Contacts contacts){
         this.contacts = contacts;
+    }
+    public Client(){
     }
 
     @Override

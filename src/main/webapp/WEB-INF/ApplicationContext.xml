@@ -25,7 +25,7 @@
     </bean>
 
     <bean id="csvConverter"
-          class="org.example.converter.CSVConverter">
+          class="org.example.services.CSVConverter">
     </bean>
 
     <bean id="templateResolver" class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">

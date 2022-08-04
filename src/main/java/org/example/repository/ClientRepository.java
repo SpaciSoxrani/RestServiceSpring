@@ -1,12 +1,10 @@
 package org.example.repository;
 
-import org.example.converter.CSVConverter;
+import org.example.services.CSVConverter;
 import org.example.models.Client;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Converter;
 import org.springframework.stereotype.Repository;
 
-import java.io.IOException;
 import java.nio.file.Path;
 import java.util.*;
 
@@ -26,7 +24,7 @@ public class ClientRepository implements IRepository<Client> {
     @Override
     public void store(Client client) throws Exception {
         repository.put(client.getId(), client);
-        csvConverter.writeLineByLine(client);
+        csvConverter.writeLineByLine(client, CSV_PATH);
     }
 
     //TODO: add logic
@@ -54,7 +52,7 @@ public class ClientRepository implements IRepository<Client> {
         return client;
     }
 
-    public List<String[]> getAll() throws Exception {
+    public List<List<String>> getAll() throws Exception {
 
         return csvConverter.readLineByLine(CSV_PATH);
     }
