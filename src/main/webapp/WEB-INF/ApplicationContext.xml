@@ -13,9 +13,12 @@
     <context:component-scan base-package="org.example"/>
     <mvc:annotation-driven/>
 
-
+    <bean id="contacts"
+          class="org.example.models.Contacts">
+    </bean>
     <bean id="client"
           class="org.example.models.Client">
+        <constructor-arg ref="contacts" />
     </bean>
     <bean id="repository"
           class="org.example.repository.ClientRepository">
