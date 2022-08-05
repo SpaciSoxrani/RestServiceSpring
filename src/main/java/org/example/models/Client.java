@@ -1,18 +1,15 @@
 package org.example.models;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.io.Serializable;
 
+@NoArgsConstructor
+@Getter @Setter
 public class Client implements Serializable {
-    @Getter
-    @Setter
     private int id;
-    @Getter
-    @Setter
     private String name;
-    @Getter
-    @Setter
     private Contacts contacts;
 
     public Client(int id, String name, Contacts contacts) {
@@ -23,8 +20,6 @@ public class Client implements Serializable {
 
     public Client(Contacts contacts){
         this.contacts = contacts;
-    }
-    public Client(){
     }
 
     @Override

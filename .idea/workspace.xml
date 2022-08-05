@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="delete unused imports">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="add getters and setters with lombok">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Contacts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659679953551</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add getters and setters with lombok">
+      <created>1659680399578</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659680399581</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -239,6 +243,7 @@
     <MESSAGE value="add information of changes" />
     <MESSAGE value="change client search method by stream" />
     <MESSAGE value="delete unused imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete unused imports" />
+    <MESSAGE value="add getters and setters with lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getters and setters with lombok" />
   </component>
 </project>
