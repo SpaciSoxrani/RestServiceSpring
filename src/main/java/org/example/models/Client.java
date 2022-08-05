@@ -1,35 +1,19 @@
 package org.example.models;
 
+import lombok.Getter;
+import lombok.Setter;
 import java.io.Serializable;
 
 public class Client implements Serializable {
+    @Getter
+    @Setter
     private int id;
+    @Getter
+    @Setter
     private String name;
+    @Getter
+    @Setter
     private Contacts contacts;
-
-    public Contacts getContacts() {
-        return contacts;
-    }
-
-    public void setContacts(Contacts contacts) {
-        this.contacts = contacts;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public Client(int id, String name, Contacts contacts) {
         this.id = id;
@@ -45,6 +29,6 @@ public class Client implements Serializable {
 
     @Override
     public String toString() {
-        return Integer.toString(getId()) + "," + getName() + "," + getContacts().getEmail() + "," + getContacts().getPhoneNumber();
+        return getId() + "," + getName() + "," + getContacts().getEmail() + "," + getContacts().getPhoneNumber();
     }
 }
