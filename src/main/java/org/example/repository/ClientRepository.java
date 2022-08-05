@@ -13,9 +13,7 @@ public class ClientRepository implements IRepository<Client> {
     private Map<Integer, Client> repository;
     @Autowired
     private CSVConverter csvConverter;
-
-    private final Path CSV_PATH = Path.of("C:\\Users\\I553132\\IdeaProjects\\RestServiceSpring\\src\\main\\resources\\PersonalContacts.csv");
-
+    private final String NAME_CSV_FILE = "PersonalContacts.csv";
     public ClientRepository() {
         this.repository = new HashMap<>();
         //TODO: add logic
@@ -24,7 +22,7 @@ public class ClientRepository implements IRepository<Client> {
     @Override
     public void store(Client client) throws Exception {
         repository.put(client.getId(), client);
-        csvConverter.writeLineByLine(client, CSV_PATH);
+        csvConverter.writeLineByLine(client, NAME_CSV_FILE);
     }
 
     //TODO: add logic
@@ -54,7 +52,7 @@ public class ClientRepository implements IRepository<Client> {
 
     public List<List<String>> getAll() throws Exception {
 
-        return csvConverter.readLineByLine(CSV_PATH);
+        return csvConverter.readLineByLine(NAME_CSV_FILE);
     }
 
 }
