@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.nio.file.Path;
 import java.util.*;
+import java.util.stream.Stream;
 
 @Repository
 public class ClientRepository implements IRepository<Client> {
@@ -35,11 +36,7 @@ public class ClientRepository implements IRepository<Client> {
     @Override
     public Client search(String name) {
         Collection<Client> clients = repository.values();
-        for (Client client : clients) {
-            if (client.getName().equalsIgnoreCase(name))
-                return client;
-        }
-        return null;
+        return repository.values().stream().filter(x->x.getName() == name).findFirst().get();
     }
 
     //TODO: add logic

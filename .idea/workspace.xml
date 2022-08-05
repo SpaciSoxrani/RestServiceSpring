@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="fix reader and writer for csv">
+    <list default="true" id="149468f3-a973-4183-91fa-227ce2731a57" name="Changes" comment="add information of changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ClientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/CSVConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/CSVConverter.java" afterDir="false" />
     </list>
@@ -165,7 +164,35 @@
       <option name="project" value="LOCAL" />
       <updated>1659646126370</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="delete unused dependencies and beans for index.html">
+      <created>1659679079270</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659679079270</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add new variable for csv file name">
+      <created>1659679125814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659679125814</updated>
+    </task>
+    <task id="LOCAL-00012" summary="delete unused file">
+      <created>1659679150329</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659679150329</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add information of changes">
+      <created>1659679207702</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659679207702</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -191,6 +218,10 @@
     <MESSAGE value="add dependency in XML configuration" />
     <MESSAGE value="delete unused files and code" />
     <MESSAGE value="fix reader and writer for csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix reader and writer for csv" />
+    <MESSAGE value="delete unused dependencies and beans for index.html" />
+    <MESSAGE value="add new variable for csv file name" />
+    <MESSAGE value="delete unused file" />
+    <MESSAGE value="add information of changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add information of changes" />
   </component>
 </project>
