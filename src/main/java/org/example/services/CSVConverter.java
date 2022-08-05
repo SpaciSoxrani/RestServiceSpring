@@ -2,9 +2,7 @@ package org.example.services;
 
 import org.example.models.Client;
 import org.springframework.stereotype.Service;
-
 import java.io.*;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
